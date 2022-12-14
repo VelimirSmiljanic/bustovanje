@@ -181,40 +181,38 @@ for(let i in faqTitle){
     </div>
     `
 }
-faq.innerHTML=faqHtml;
+faq.innerHTML = faqHtml;
 
-const parentContainer =  document.querySelector('.read-more-container');
+var readMoreBtn = $('.extend-btn');
+var readLessBtn = $('.invert-btn')
 
-parentContainer.addEventListener('click', event=>{
-
-    const current = event.target;
-
-    const isReadMoreBtn = current.className.includes('read-more-btn');
-
-    if(!isReadMoreBtn) return;
-
-    const currentText = event.target.parentNode.querySelector('.read-more-text');
-
-    currentText.classList.toggle('read-more-text--show');
-
-    current.textContent = current.textContent.includes('Read More') ? "Read Less..." : "Read More...";
-
+readMoreBtn.click(function() {
+   $(this).addClass('hide')
+   $(this).next().css('display', 'block')
 })
 
-
+readLessBtn.click(function(){
+    $(this).parent().css('display', 'none')
+    $(this).parent().prev().removeClass('hide');
+})
 
 //KONTAKT
+
+const reName = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u
+const reEmail = /[a-z0-9!#$%&'+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&'+/=?^_`{|}~-]+)@(?:[a-z0-9](?:[a-z0-9-][a-z0-9])?.)+[a-z0-9](?:[a-z0-9-][a-z0-9])?/;
+const reNumber = /([0-9\s-]{7,})(?:\s(?:#|x.?|ext.?|extension)\s*(\d+))?$/
+
 function contactHandler(){
     var name, email,  number, text, nameErr , emailErr, numberErr, textErr
     var errors= 0
-    name = document.querySelector('#name')
-    email = document.querySelector('#email')
-    number = document.querySelector('#number')
-    text = document.querySelector('#text')
-    nameErr = document.querySelector('#nameError')
-    emailErr = document.querySelector('#emailError')
-    numberErr = document.querySelector('#phoneError')
-    textErr = document.querySelector('#textError')
+    name = $('#name')
+    email = $('#email')
+    number = $('#number')
+    text = $('#text')
+    nameErr = $('#nameError')
+    emailErr = $('#emailError')
+    numberErr = $('#phoneError')
+    textErr = $('#textError')
     
     if(name.val()==""){
         nameErr.html("This field is empty!")
