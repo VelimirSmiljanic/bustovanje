@@ -75,8 +75,8 @@ window.addEventListener("scroll", aktivanTab);
 window.addEventListener("click", aktivanTab);
 
 
-//futer
-
+//linkovi
+//
 
 
 //slider

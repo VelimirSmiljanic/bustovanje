@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Notifications</title>
+        <link>https://velimirsmiljanic.github.io/bustovanje/index.html</link>
+        <description>Najnovije vesti</description>
+        <copyright>Copyright 2022, bustovanje.com</copyright>
+        <language>en</language>
+        <category>Services</category>
+        <pubDate>Mon, 14 Dec 2022</pubDate>
+        <docs>http://blogs.law.hardvrd.edu/tech/rss</docs>
+        <ttl>15</ttl>
+        <item>
+    <title>New Discounts!</title>
+    <link>index.html/vest1</link>
+        <description>Road to diamond is now less expensive!</description>
+        </item>
+        </channel>
+</rss>
