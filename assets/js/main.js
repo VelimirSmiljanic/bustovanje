@@ -100,7 +100,7 @@ function slider(){
 //usluga
 
 let menu = document.querySelector('.usluge .usluge_omot');
-var menuTitle = ['silver', 'gold', 'platinum', 'diamond', 'master', 'grandMaster']
+var menuTitle = ['Silver', 'gold', 'platinum', 'diamond', 'master', 'grandMaster']
 var menuPrice = [40, 100, 250, 600, 1000, 1500]
 var menuPriceNew = menuPrice.map( x=> x*0.8)
 var menuHtml= ""
