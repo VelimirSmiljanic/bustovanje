@@ -120,7 +120,7 @@ menu.innerHTML = menuHtml;
 let review = document.querySelector('.komentari .komentari_omot')
 var reviewText = ['Played with Neylas  and he carried top with easy in my Master promo.','I had Duo Boost - really skilled players and also friendly and really funny guys.']
 var reviewName = ['Marko Tosic', 'Jovan Mijalkovic']
-var reviewRating = [5, 5, 5]
+var reviewRating = [5, 5]
 var reviewHtml=""
 
 for(let i=0;i<reviewName.length;i++){
