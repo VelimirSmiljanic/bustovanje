@@ -450,6 +450,7 @@ html {
   color: #fff;
   font-size: 3rem;
   padding: 1rem 0;
+  text-transform: capitalize;
 }
 
 .usluge .usluge_omot .box .price {
