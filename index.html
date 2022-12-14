@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boosting Services</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/6163c51818.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navigacija">
+        <div class="navigacija_omot">
+            <a href="#sredina" id="navigacija_logo">Boosting Services</a>
+            <div class="navigacija_toggle" id="mobilni_meni">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navigacija_meni">
+                <li class="navigacija_itemi">
+                    <a href="#sredina" class="navigacija_linkovi" id="pocetna">Home</a>
+                </li>
+                <li class="navigacija_itemi">
+                    <a href="#sadrzaj" class="navigacija_linkovi" id="o_nama">About</a>
+                </li>
+                <li class="navigacija_itemi">
+                    <a href="#usluge" class="navigacija_linkovi" id="usluge1">Services</a>
+                </li>
+                <li class="navigacija_itemi">
+                    <a href="#musterije" class="navigacija_linkovi" id="review">Review</a>
+                </li>
+                <li class="navigacija_itemi">
+                    <a href="#kontakt" class="navigacija_linkovi" id="contact">Contact</a>
+                </li>
+                <li class="navigacija_itemi">
+                    <a href="#prijavi_se" class="navigacija_linkovi" id="join">Join Us</a>
+                </li>
+                <li class="navigacija_itemi">
+                    <a href="#faq1" class="navigacija_linkovi" id="faq">FAQ</a>
+                </li>
+                <li class="navigacija_itemi">
+                    <a href="#autor1" class="navigacija_linkovi" id="autor">Author</a>
+                </li>
+                
+            </ul>
+        </div>
+
+        
+    </nav>
+
+
+    <div class="sredina" id="sredina">
+        <div class="sredina_omot">
+            <div class="sredina_header">
+                <h1><span> Boosting Services </span> </h1>
+                <p class="sredina_opis">Very easy, Very fast And Reliable</p>
+                <button class="glavno_btn"><a href="#kontakt">Schedule call</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="glavno" id="sadrzaj">
+        <div class="glavno_omot">
+            <div class="glavno_img_omot">
+                <div class="glavno_img_slika"><i class="fa-sharp fa-solid fa-users"></i></div>
+            </div>
+            <div class="glavno_sadrzaj">
+                <h1>Why choose us?</h1>
+                <p>No one on your friend list will see the booster playing on your account.</p>
+                <p>Custom roles and champions, offline mode, VPN and much more for free.</p>
+                <p>Track your elo boost's progress easily on your personal client area.</p>
+                <button class="glavno_btn"><a href="#usluge">Order now!</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="usluge" id="usluge">
+        <h1 class="header">Our <span>Services</span></h1>
+        <div class="usluge_omot">
+            
+        </div>
+    </div>
+
+    <div class="komentari" id="musterije">
+        <h1 class="header">customer <span>review</span></h1>
+
+        <div class="komentari_omot box">
+
+        </div>
+    </div>
+
+    <div class="kontakt" id="kontakt">
+        <h1 class="header"><span>contact</span> us</h1>
+        <div class="row">
+            <form action="">
+                <h3>get in touch</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" id="name" placeholder="name">
+                </div>
+                <span class="error" id="nameError"></span>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" id="email" placeholder="email">
+                </div>
+                <span class="error" id="emailError"></span>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" id="number" placeholder="number">
+                </div>
+                <span class="error" id="phoneError"></span>
+                <div class="inputBox">
+                    <span class="fas fa-comment"></span>
+                    <textarea id="text" placeholder="Write your message here..."></textarea>
+                </div>
+                <span class="error" id="textError"></span><br>
+                <input type="button" value="Contact now" class="btn" onclick="contactHandler()">
+            </form>
+        </div>
+
+    </div>
+
+    <div class="glavno" id="prijavi_se">
+        <div class="glavno_omot">
+            <div class="glavno_sadrzaj">
+                <h1>Join our team</h1>
+                <h2>Sign up today</h2>
+                <p>See what makes us different</p>
+                <button class="glavno_btn"><a href="#kontakt">Sign Up!</a></button>
+            </div>
+            <div class="glavno_img_omot">
+                <div class="glavno_img_slika" id="card_2"><i class="fa-sharp fa-solid fa-users"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq" id="faq1">
+
+        <h1 class="header"><span>FAQ</span></h1>
+
+        <div class="faq_omot">
+            
+        </div>
+
+    </div>
+
+    <div class="autor" id="autor1">
+
+        <h1 class="header"><span>Author</span> </h1>
+
+        <div class="autor_omot">
+            <div class="image">
+                <img src="assets/images/autor.jpg" alt="autor">
+            </div>
+
+            <div class="content">
+                <h3>Velimir Smiljanic 123/18</h3>
+                <p>My name is Velimir Smiljanic and i am from Pirot</p>
+                <p>I finished Gymnasium Pirot and now I am studying Web Design and Programing in ICT college in Belgrade</p>
+            </div>
+        </div>
+
+    </div>
+  
+
+    <div class="futer_omot">
+        <section class="social_media">
+            <div class="social_media_omot">
+                <div class="futer_logo">
+                    <a href="#" id="futer_logo">Boosting Services</a>
+                </div>
+                <p class="website_rights">Boosting Servuces 2020. All rights reserved</p>
+                <div class="social_icons">
+                    <a href="" class="social_icon_link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social_icon_link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="social_icon_link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="" class="social_icon_link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="assets/main.js" text="type/javascript"></script>
+</body>
+</html>
